@@ -1,0 +1,89 @@
+{
+  "name": "@lzimul/workspace",
+  "description": "None",
+  "version": "1",
+  "author": {
+    "name": "lZiMUl",
+    "email": "lZiMUl@lzimul.com",
+    "url": "https://lzimul.com"
+  },
+  "contributors": [
+    {
+      "name": "lZiMUl",
+      "email": "lZiMUl@lzimul.com",
+      "url": "https://lzimul.com"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "lZiMUl",
+      "email": "lZiMUl@lzimul.com",
+      "url": "https://lzimul.com"
+    }
+  ],
+  "homepage": "https://lzimul.com",
+  "main": "./build/index.js",
+  "types": "./lib/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "lint": "npx eslint --fix",
+    "build": "npm run lint && tsc && npm run typedoc",
+    "typedoc": "typedoc",
+    "dev": "npm run build && npm run start",
+    "test": "echo Done",
+    "install:china": "npm install --registry=https://registry.npmmirror.com",
+    "update:china": "npm update --registry=https://registry.npmmirror.com"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/index.js",
+      "require": "./build/index.js",
+      "types": "./lib/index.d.ts",
+      "default": "./build/index.js"
+    }
+  },
+  "files": [
+    "./build/",
+    "./lib/",
+    "./LICENSE",
+    "./README.md",
+    "./SECURITY.md"
+  ],
+  "keywords": [
+    "lZiMUl",
+    "BiliBili",
+    "Danmu",
+    "Send"
+  ],
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "axios": "^1.16.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/parser": "^8.59.3",
+    "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3",
+    "tslib": "^2.8.1",
+    "typedoc": "^0.28.19",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lZiMUl/Workspace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lZiMUl/Workspace/issues",
+    "email": "lZiMUl@lzimul.com"
+  },
+  "sideEffects": false,
+  "private": true
+}
