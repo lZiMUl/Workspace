@@ -3,6 +3,7 @@ FROM node:${NODE_VERSION}
 USER root
 WORKDIR /app
 COPY ./ ./
+RUN pwd && ls -lah /app && file /app/entrypoint.sh
 RUN apt update
 RUN apt install dos2unix -y
 RUN dos2unix ./entrypoint.sh
