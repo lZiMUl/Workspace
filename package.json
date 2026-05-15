@@ -23,6 +23,7 @@
   ],
   "homepage": "https://lzimul.com",
   "main": "./build/index.js",
+  "type": "module",
   "types": "./lib/index.d.ts",
   "license": "MIT",
   "scripts": {
